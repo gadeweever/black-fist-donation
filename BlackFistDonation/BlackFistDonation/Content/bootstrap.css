@@ -224,6 +224,21 @@ table {
   border-spacing: 0;
 }
 
+donortable {
+    border-collapse:collapse;
+    border-spacing: 0;
+    width: 40%;
+    float: left;
+}
+
+.donorview{
+    width: 60%;
+    text-align: center;
+    float: right;
+    background-color: #FF131A;
+    
+}
+
 @media print {
   * {
     color: #000 !important;

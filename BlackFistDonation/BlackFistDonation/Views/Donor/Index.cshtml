@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<BlackFistDonation.Models.Donor>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Donation View";
 }
 
 <h2>Index</h2>
@@ -9,7 +9,16 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
+<section class="donorview">
+    <article>
+        $@ViewBag.CurrentAmount Collected!
+    </article>
+    <article>
+        @ViewBag.DonorCount Donors!
+    </article>
+</section>
+
+<table class="donortable" >
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.FirstName)

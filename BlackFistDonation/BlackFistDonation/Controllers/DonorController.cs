@@ -17,6 +17,10 @@ namespace BlackFistDonation.Controllers
         // GET: /Donor/
         public ActionResult Index()
         {
+            int donamount = GetTotalAmount();
+
+            ViewBag.CurrentAmount = donamount;
+            ViewBag.DonorCount = db.Donors.Count();
             return View(db.Donors.ToList());
         }
 
@@ -122,6 +126,15 @@ namespace BlackFistDonation.Controllers
                 db.Dispose();
             }
             base.Dispose(disposing);
+        }
+
+        private int GetTotalAmount()
+        {
+            int total = 0;
+            foreach (Donor item in db.Donors)
+                total += item.Donation;
+
+            return total;
         }
     }
 }
