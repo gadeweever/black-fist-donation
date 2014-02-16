@@ -229,14 +229,16 @@ donortable {
     border-spacing: 0;
     width: 40%;
     float: left;
+    color: #000;
 }
 
 .donorview{
     width: 60%;
     text-align: center;
     float: right;
-    background-color: #FF131A;
-    
+    background-color: #FFF;
+    font-size: 54px;
+    color: #960A00;
 }
 
 @media print {
@@ -329,7 +331,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
-  color: #333333;
+  color: #333;
   background-color: #ffffff;
 }
 
@@ -4516,12 +4518,12 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-inverse {
-  background-color: #222222;
+  background-color: #960A00;
   border-color: #080808;
 }
 
 .navbar-inverse .navbar-brand {
-  color: #999999;
+  color: #FFF;
 }
 
 .navbar-inverse .navbar-brand:hover,
@@ -4531,11 +4533,11 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-inverse .navbar-text {
-  color: #999999;
+  color: #FFF;
 }
 
 .navbar-inverse .navbar-nav > li > a {
-  color: #999999;
+  color: #FFF;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover,
