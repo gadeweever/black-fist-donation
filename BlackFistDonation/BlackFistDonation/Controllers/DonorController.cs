@@ -12,7 +12,7 @@ namespace BlackFistDonation.Controllers
 {
     public class DonorController : Controller
     {
-        private DonorDBContext db = new DonorDBContext();
+        private AzureDBContext db = new AzureDBContext();
 
         // GET: /Donor/
         public ActionResult Index()

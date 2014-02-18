@@ -23,7 +23,7 @@ namespace BlackFistDonation.Models
         public int Donation { get; set; }
     }
 
-    public class DonorDBContext : DbContext
+    public class AzureDBContext : DbContext
     {
         public DbSet<Donor> Donors { get; set; }
     }
